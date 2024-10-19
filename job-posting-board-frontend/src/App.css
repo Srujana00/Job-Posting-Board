@@ -1,0 +1,241 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* For purple background covering the entire section */
+.homebg {
+  background-color: #d80df3;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center container holding the white background */
+.container {
+  width: 60%; /* Adjust width as needed */
+}
+.form-container1 {
+  background-color: white;
+  width: 100%; /* Use 100% width for the white background */
+  max-width: 600px; /* Set a max-width to center the form */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Add padding inside the form */
+  border-radius: 10px; /* Optional: add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+/* White background in the middle */
+.whitebg {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(232, 184, 230, 0.1); /* Optional shadow for style */
+}
+
+/* Login form section */
+.login-section {
+  flex: 1; /* Take up half of the space */
+  padding-right: 20px; /* Add space between form and image */
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-section form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-section form button {
+  background-color: #d80df3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Image section */
+.image-section {
+  flex: 1; /* Take up half of the space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+/* Container holding the buttons */
+.button-container {
+  display: flex; /* Aligns buttons side by side */
+  justify-content: start; /* Align buttons to the left */
+  gap: 5px; /* Reduced space between the buttons */
+}
+
+/* Button styles */
+.button {
+  padding: 10px 20px;
+  border: 2px solid transparent; /* Border for styling hover */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d80df3;
+  color: white;
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #d80df3; /* Purple border on hover */
+}
+
+button[type="button"] {
+  background-color: #ccc; /* Different color for the Cancel button */
+}
+
+/* Hover effect for Cancel button */
+button[type="submit"]:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #d80df3; /* Purple border on hover */
+}
+button[type="button"]:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #d80df3; /* Purple border on hover */
+}
+
+/* Container for the registration page */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #d80df3; /* Purple background */
+}
+
+/* Form box styling */
+.form-box {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  border-radius: 16px;
+  padding: 40px;
+  width: 400px; /* Fixed width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Input field styles */
+input {
+  width: 90%; /* Full width */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styles */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d80df3; /* Purple button */
+  color: white;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: white; /* Background color changes to white */
+  color: black; /* Text color changes to black */
+}
+
+/* Popup message styling */
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9); /* Background color of popup */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.popup-message p {
+  margin-bottom: 15px;
+}
+
+.popup-message button {
+  background-color: #d80df3; /* Button color for popup */
+  color: white;
+}
+.logout-container {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.logout-button:hover {
+  padding: 10px 15px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button {
+  background-color: white;
+  color: #d80df3;
+  border: 1px solid #d80df3;
+}
+
